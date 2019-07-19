@@ -1,0 +1,113 @@
+.weather {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0px 1px 10px 0px #cfcfcf;
+    overflow: hidden;
+}
+
+.weather .current {
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url("/assets/orange.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    // padding: 30px;
+    height: 500px;
+    text-shadow: 1px blue;
+}
+
+.weather .current .info {
+    // display: flex;
+    // flex-flow: column wrap;
+    // justify-content: space-around;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+.weather .current .info .city {
+    font-size: 40px;
+}
+
+.weather .current .info .temp {
+    font-size: 56px;
+}
+
+.weather .current .info .wind {
+    font-size: 10px;
+}
+
+.weather .current .info .clouds {
+    font-size: 10px;
+}
+
+.weather .current .info .main {
+    font-size: 10px;
+    padding: 0px;
+}
+
+.weather .current .icon {
+    text-align: center;
+    font-size: 64px;
+    flex-grow: 1;
+}
+
+.weather .future {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15%;
+}
+
+.weather .future .day {
+    flex-grow: 1;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weather .future .day:hover {
+    color: white;
+    background-color: orange;
+}
+
+.weather .future .day h4 {
+    // text-transform: uppercase;
+    font-family: verdana;
+}
+
+.weather .future .day p {
+    font-size: 28px;
+}
+
+.container {
+    background-color: white;
+    margin-right: auto;
+    // text-align: center;
+}
+
+ion-title {
+    text-decoration: overline;
+    text-align: center;
+    font-family: verdana;
+    // font-size: 30px;
+}
+
+ion-button {
+    transform: translateX(800%);
+    text-align: center;
+}
+
+// ion-content {
+//     text-align: center;
+// }
+// .img {
+//     width: 1000px;
+//     height: 900px;
+// }
+// ion-card {
+//     text-align: center;
+//     color: white;
+//     width: 90%;
+//     transform: translateX(5%);
+// }
