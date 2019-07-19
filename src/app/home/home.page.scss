@@ -56,7 +56,7 @@
 .weather .future {
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 15%;
+    margin-bottom: 18%;
 }
 
 .weather .future .day {
@@ -108,6 +108,7 @@ ion-button {
 // ion-card {
 //     text-align: center;
 //     color: white;
-//     width: 90%;
+//     background-color: transparent;
+//     width: 200%;
 //     transform: translateX(5%);
 // }

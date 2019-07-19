@@ -21,8 +21,13 @@
 
                                 <div class="city"><small></small>{{name}}</div>
                                 <h5>{{date | date: 'EEEE'}}&nbsp;{{date | date: 'dd' }}/{{date | date: 'MM' }}/{{date | date: 'yyyy' }}</h5>
-                                <h5>{{date |date: 'hh:mm:ss' }}</h5>
+                                <h5>{{date |date: 'hh:mm' }}</h5>
                                 <div class="temp">{{weatherData[0].main.temp|number : '1.0-0'}}&#8451;<img src="http://openweathermap.org/img/w/{{weatherData[0].weather[0].icon}}.png"></div>
+
+
+
+                                <h4>{{weatherData[0].weather[0].description}}</h4>
+                                <br>
 
                                 <div class="main">
                                     <h6>Pressure:{{weatherData[0].main.pressure}}mb</h6>
@@ -42,33 +47,44 @@
                             </div>
                             <!-- </ion-card> -->
 
-                            <div class="icon">
+                            <!-- <div class="icon">
                                 <span class="wi-day-sunny"></span>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="future">
                             <div class="day">
                                 <h4> Sat </h4>
                                 <div><img src="http://openweathermap.org/img/w/{{weatherData[8].weather[0].icon}}.png"> </div>
-                                <div class="temp">{{weatherData[8].main.temp|number : '1.0-0'}}&#8451;</div>
+                                <div class="temp">{{weatherData[8].main.temp|number : '1.0-0'}}&#8451;
+                                    <h6>{{weatherData[0].weather[0].description}}</h6>
+                                </div>
 
                             </div>
                             <div class="day">
                                 <h4> Sun </h4>
                                 <img src="http://openweathermap.org/img/w/{{weatherData[16].weather[0].icon}}.png">
-                                <div class="temp">{{weatherData[16].main.temp|number : '1.0-0'}}&#8451;</div>
+                                <div class="temp">{{weatherData[16].main.temp|number : '1.0-0'}}&#8451;
+                                    <h6>{{weatherData[0].weather[0].description}}</h6>
+                                </div>
+
 
 
                             </div>
                             <div class="day">
                                 <h4> Mon </h4>
                                 <div><img src="http://openweathermap.org/img/w/{{weatherData[24].weather[0].icon}}.png"></div>
-                                <div class="temp">{{weatherData[24].main.temp|number : '1.0-0'}}&#8451;</div>
+                                <div class="temp">{{weatherData[24].main.temp|number : '1.0-0'}}&#8451;
+                                    <h6>{{weatherData[0].weather[0].description}}</h6>
+                                </div>
+
                             </div>
                             <div class="day">
                                 <h4> Tue </h4>
                                 <div><img src="http://openweathermap.org/img/w/{{weatherData[32].weather[0].icon}}.png"></div>
-                                <div class="temp">{{weatherData[32].main.temp|number : '1.0-0'}}&#8451;</div>
+                                <div class="temp">{{weatherData[32].main.temp|number : '1.0-0'}}&#8451;
+                                    <h6>{{weatherData[0].weather[0].description}}</h6>
+                                </div>
+
                             </div>
 
                         </div>
