@@ -3,6 +3,7 @@
     flex-flow: column wrap;
     box-shadow: 0px 1px 10px 0px #cfcfcf;
     overflow: hidden;
+    text-align: center;
 }
 
 .weather .current {
@@ -84,7 +85,6 @@
 .container {
     background-color: white;
     margin-right: auto;
-    // text-align: center;
 }
 
 ion-title {
@@ -107,9 +107,8 @@ ion-button {
 //     height: 900px;
 // }
 // ion-card {
-//     text-align: center;
 //     color: white;
+//     text-align: center;
 //     background-color: transparent;
-//     width: 200%;
-//     transform: translateX(5%);
+//     width: 100px;
 // }
